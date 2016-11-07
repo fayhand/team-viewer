@@ -7,12 +7,11 @@
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<title>Team Viewer</title>
 		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
-		<script src="node_modules/angular/angular.js"></script>
-		<script src="node_modules/angular-route/angular-route.js"></script>
-		<script src="node_modules/jquery/dist/jquery.js"></script>
-		<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-		<script src="scripts/app.js"></script>
-		<script src="scripts/HomeController.js"></script>
+		<script src="jspm_packages/system.js"></script>
+    	<script src="config.js"></script>
+	    <script>
+	      System.import('./scripts/app');
+	    </script>
 	</head>
 	<body class="container" ng-app="team-viewer">
 
