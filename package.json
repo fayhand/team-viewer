@@ -1,0 +1,26 @@
+{
+  "name": "team-viewer",
+  "version": "1.0.0",
+  "description": "Test project, create and manage teams and users",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fayhand/team-viewer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fayhand/team-viewer/issues"
+  },
+  "homepage": "https://github.com/fayhand/team-viewer#readme"
+}
