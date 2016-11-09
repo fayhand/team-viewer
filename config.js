@@ -20,6 +20,7 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "bootstrap": "github:twbs/bootstrap@3.3.7",
     "core-js": "npm:core-js@1.2.7",
+    "css": "github:systemjs/plugin-css@0.1.32",
     "github:angular/bower-angular-route@1.5.8": {
       "angular": "github:angular/bower-angular@1.5.8"
     },

@@ -1,9 +1,8 @@
-(function(angular) {
-  'use strict';
-	angular.module('team-viewer')
- 		.controller('HomeController', function() 
- 		{
-     
- 		});
+import angular from "angular";
 
-})(window.angular);
+import app from "./app.js";
+
+app.controller('homeController', function() 
+	{
+
+	});

@@ -6,14 +6,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<title>Team Viewer</title>
-		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+		
+		<!-- build:remove -->
 		<script src="jspm_packages/system.js"></script>
     	<script src="config.js"></script>
 	    <script>
-	      System.import('./scripts/app');
+	      System.import('./scripts/main');
 	    </script>
+	    <!-- endbuild -->
+	    <!-- build:js(.) scripts/main.min.js -->
+        <!-- inject:js -->
+        <!-- endinject -->
+        <!-- endbuild -->
 	</head>
-	<body class="container" ng-app="team-viewer">
+	<body class="container">
 
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
