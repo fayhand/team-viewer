@@ -1,9 +1,6 @@
 var gulp = require("gulp");
 
 var useref = require('gulp-useref');
-//TODO: remove these?
-var uglify = require('gulp-uglify');
-var gulpIf = require('gulp-if');
 
 var clean = require('gulp-clean');
 gulp.task('clean-dist', function () {

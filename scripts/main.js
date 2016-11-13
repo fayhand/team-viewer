@@ -2,11 +2,8 @@ import angular from "angular";
 import bootstrap from 'bootstrap';
 import 'bootstrap/css/bootstrap.css!';
 
-import "./app.js";
-import "./homeController.js";
-import "./teamsController.js";
-import "./routes.js";
+import { default as appModule} from "./app";
 
 angular.element(document).ready(function() {
-    angular.bootstrap(document, ["team-viewer"]);
+    angular.bootstrap(document, [appModule]);
 });

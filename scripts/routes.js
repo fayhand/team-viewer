@@ -1,19 +1,21 @@
-import angular from "angular";
+function config($routeProvider) 
+{
+  	$routeProvider
+  	.when("/", 
+  	{
+  		controller: "homeController",
+  		templateUrl: "./views/home.html",
+  		controllerAs: "vm"
+  	})
+  	.when("/teams", 
+  	{
+  		controller: "teamsController",
+  		templateUrl: "./views/teams.html",
+  		controllerAs: "vm"
+  	})  
+  	.otherwise("/")
+};
 
-import app from "./app.js";
+config.$inject = ["$routeProvider"];
 
-app.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) 
-	{
-	  	$routeProvider
-	  	.when("/", 
-	  	{
-	  		controller: "homeController",
-	  		templateUrl: "./views/home.html"
-	  	})
-	  	.when("/teams", 
-	  	{
-	  		controller: "teamsController",
-	  		templateUrl: "./views/teams.html"
-	  	})  
-	  	.otherwise("/")
-	}]);
+export default config;
